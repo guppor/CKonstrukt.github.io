@@ -42,6 +42,17 @@
         </style>
     </noscript>
 
+    <script>
+        function openFullscreen(elem) {
+            if (elem.requestFullscreen) {
+                elem.requestFullscreen();
+            } else if (elem.webkitRequestFullscreen) {
+                /* Safari */
+                elem.webkitRequestFullscreen();
+            }
+        }
+    </script>
+
     <!-- Page Title -->
     <title>Seppe Meeus - Portofolio</title>
     
@@ -158,7 +169,7 @@
                     <div class="card h-60">
                         <div class="card-body">
                             <figure> 
-                                <img src="assets/images/projects/2_Login.png" alt="Login pagina" class="img-fluid rounded">
+                                <img src="assets/images/projects/2_Login.png" alt="Login pagina" class="img-fluid rounded" onclick="openFullscreen(this)">
                             </figure>
                             <p>
                                 De login pagina.
@@ -170,7 +181,7 @@
                     <div class="card h-60">
                         <div class="card-body">
                             <figure> 
-                                <img src="assets/images/projects/2_Homepage.png" alt="De verschillende courses, te zien op de homepagina" class="img-fluid rounded">
+                                <img src="assets/images/projects/2_Homepage.png" alt="De verschillende courses, te zien op de homepagina" class="img-fluid rounded" onclick="openFullscreen(this)">
                             </figure>
                             <p>
                                 Op de homepagina kunnen de verschillende courses gefilterd worden.
@@ -182,7 +193,7 @@
                     <div class="card h-60">
                         <div class="card-body">
                             <figure> 
-                                <img src="assets/images/projects/2_Chapter.png" alt="Een hoofdstuk uit de course 'Become Heisenberg'" class="img-fluid rounded">
+                                <img src="assets/images/projects/2_Chapter.png" alt="Een hoofdstuk uit de course 'Become Heisenberg'" class="img-fluid rounded" onclick="openFullscreen(this)">
                             </figure>
                             <p>
                                 Elke course bestaat uit verschillende hoofdstukken. Als een user op een hoofdstuk terechtkomt, wordt dit
@@ -191,6 +202,12 @@
                         </div>
                     </div>
                 </div>
+            </div>
+
+            <div class="m-auto">                
+                <p>
+                    Klik op een foto om ze te vergroten 
+                </p>                
             </div>
 
             <!-- Footer -->
