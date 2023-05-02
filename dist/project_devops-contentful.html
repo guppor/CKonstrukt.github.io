@@ -44,11 +44,13 @@
 
     <script>
         function openFullscreen(elem) {
-            if (elem.requestFullscreen) {
-                elem.requestFullscreen();
-            } else if (elem.webkitRequestFullscreen) {
-                /* Safari */
-                elem.webkitRequestFullscreen();
+            if(!/Mobi|Android/i.test(navigator.userAgent)) {
+                if (elem.requestFullscreen) {
+                    elem.requestFullscreen();
+                } else if (elem.webkitRequestFullscreen) {
+                    /* Safari */
+                    elem.webkitRequestFullscreen();
+                }
             }
         }
     </script>
@@ -127,7 +129,7 @@
                 </div>
             </div>
 
-            <div class="m-auto">                
+            <div class="d-none d-md-block m-auto">                
                 <p class="small d-flex align-items-center"><i class="ri-information-line me-2"></i> klik op foto om ze te vergroten</span>               
             </div>
 
@@ -285,6 +287,7 @@
                         <!-- UI Kit Menu Section-->
                         <li class="menu-section mt-5">Projecten</li>
                         <ul class="submenu">
+                            <li><a class="submenu-link" href="./project_subscription-tracker.html">Subscription tracker</a></li>
                             <li><a class="submenu-link" href="./project_php.html">PHP Project</a></li>
                             <li><a class="submenu-link" href="./project_requirement-analysis.html">Requirement Analysis</a></li>
                             <li><a class="submenu-link text-white" href="./project_devops-contentful.html">ASP.NET Contenful</a></li>

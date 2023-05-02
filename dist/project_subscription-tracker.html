@@ -89,14 +89,14 @@
                         </div>
                         <div class="card-body">
                             <p>
-                                Dit was een groepsproject waarbij het de bedoeling
-                                was dat we PHP Laravel Liwewire gebruikten samen met AlpineJS en Tailwind om de applicatie te maken. Bij onze opgave hoorde ook een redelijk 
-                                uitgebreide relational SQL database. De groepen voor dit project werden opgedeeld volgens de punten van het PHP examen en aangezien ik toen 
-                                goede punten had kwam ik terecht in een toffe groep waar niemand zich echt zorgen maakte over de deadline van het project. 
+                                De subscription tracker is een side-project dat ik aan het maken ben om mijn abonnementen bij te houden. Er zijn natuurlijk finance tracker apps,
+                                maar dit leek me een opportuniteit om Flutter te leren. Flutter is een cross-platform framework dat gebruik maakt van Dart. Het is een relatief nieuw
+                                en heeft een grote community. Het is ook heel performant, omdat het gebruik maakt van een eigen rendering engine. Ik heb voor Flutter gekozen boven 
+                                Kotlin omdat in Flutter apps maar 1 keer geschreven moeten worden, en ze dan op zowel Android als iOS werken wat veel beter is voor solo developers.
                             </p>
                             <p>
-                                Onze opdracht was een fictieve hockeyclub, De Stickies. We moesten onder andere zorgen voor authenticatie van verschillende rollen 
-                                (Financieel, Trainer, Ouder,...), een webshop, een ledensysteem en CRUD schermen.
+                                Voor ik ben begonnen aan programmeren heb ik een design gemaakt in Figma, wat ik ook heb moeten leren. Ik heb ook gebruik gemaakt van ChatGPT om 
+                                features van de app verder uit te werken, het blijkt daaruit dat ChatGPT een geweldige brainstorming tool is.
                             </p>
                         </div>
                     </div>
@@ -109,16 +109,18 @@
                         </div>
                         <div class="card-body">
                             <p>
-                                Dit project liep voor 5 maanden en ik heb toen veel kennis opgedaan, zowel over het professioneel praten met een klant als het werken in een team.
-                                Hieronder volgen enkele van de belangrijkste dingen die ik geleerd heb:
+                                Ik ben nog altijd bezig aan het project, maar ik heb er al veel van geleerd, namelijk:
                             </p>
                             <ul>
                                 <li>
-                                    Git gebruiken in teams. We hadden af en toe wel eens merge conflicts, ongewilde production versions of git problemen in general. 
+                                    Dart, de taal waarmee flutter werkt. Toen ik er eerst mee begon was het heel familiair en leek het niet te complex, maar naarmate ik er meer 
+                                    mee werkte gebruikte ik advanced features zoals streams, factories, async en await, en meer. Wij zien deze maar redelijk beperkt in de lessen,
+                                    maar ze zijn wel goede kennis voor later.
                                 </li>
                                 <li>
-                                    Het PHP Laravel framework. Ik heb hierbij geleerd hoe je een project opzet en hoe je het best werkt met de MVC structuur. Laravel is heel
-                                    uitgebreid en ik heb nog lang niet alles gezien, maar ik heb wel een goed idee van hoe het werkt en hoe ik het kan gebruiken.
+                                    Business logic separation. Flutter is opgedeeld in 2 delen, de UI en de business logic. Bij vanilla Flutter wordt business logic in de UI 
+                                    geschreven, maar dit is niet echt best practice. Bloc is een package die je toelaat om de business logic in een aparte laag te schrijven. 
+                                    Het concept van Bloc is simpel maar, zeker voor een beginner, kan het wel even nadenken zijn.
                                 </li>
                             </ul>
                         </div>
@@ -126,100 +128,164 @@
                 </div>
             </div>
 
+            <hr class="mb-5">
+
             <div class="d-none d-md-block m-auto">                
                 <p class="small d-flex align-items-center"><i class="ri-information-line me-2"></i> klik op foto om ze te vergroten</span>               
+            </div>
+
+            <div class="row g-4 mb-4">
+                <div class="col-12 col-lg-4">
+                    <div class="card h-40">
+                        <div class="card-body text-center text-lg-start">
+                            <figure class="text-center">
+                                <img src="assets/images/projects/subscription_tracker/design_homescreen_2.png" alt="Design voor de homepagina" class="img-fluid rounded" onclick="openFullscreen(this)">
+                            </figure>
+                            <p>
+                                Dit was het eerste design voor de homepagina van de app. Het is opgedeeld in 3 delen: het totaal van de abonnementen, de abonnementen die morgen 
+                                betaald worden, en dan de abonnementen zelf die gesorteerd en gefilterd kunnen worden. 
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-lg-4">
+                    <div class="card h-40">
+                        <div class="card-body text-center text-lg-start">
+                            <figure class="text-center">
+                                <img src="assets/images/projects/subscription_tracker/design_homescreen_1.png" alt="Alt Design voor de homepagina" class="img-fluid rounded" onclick="openFullscreen(this)">
+                            </figure>
+                            <p>
+                                Dit was het tweede design voor de homepagina van de app. Het is grotendeels hetzelfde maar de abbonementen zitten nu in tiles met een logo in 
+                                plaats van in een list.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-lg-4">
+                    <div class="card h-40">
+                        <div class="card-body text-center text-lg-start">
+                            <figure class="text-center">
+                                <img src="assets/images/projects/subscription_tracker/design_calendar.png" alt="Design voor kalender" class="img-fluid rounded" onclick="openFullscreen(this)">
+                            </figure>
+                            <p>
+                                De kalender toont op welke dag je abonnementen betaald worden.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row g-4 mb-4 justify-content-center">
+                <div class="col-12 col-lg-4">
+                    <div class="card h-40">
+                        <div class="card-body text-center text-lg-start">
+                            <figure class="text-center">
+                                <img src="assets/images/projects/subscription_tracker/design_add.png" alt="Design voor nieuwe subscription toe te voegen" class="img-fluid rounded" onclick="openFullscreen(this)">
+                            </figure>
+                            <p>
+                                Om een abonnement toe te voegen moet de naam, prijs, betaaldatum en de periode ingegeven worden. De app berekent dan de volgende betaaldatum.
+                                Er kan ook nog gekozen worden om reminders voor een betaling aan te zetten en er is een mogelijkheid om extra info te geven.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-lg-4">
+                    <div class="card h-40">
+                        <div class="card-body text-center text-lg-start">
+                            <figure class="text-center">
+                                <img src="assets/images/projects/subscription_tracker/design_edit.png" alt="Design voor subscription te editen" class="img-fluid rounded" onclick="openFullscreen(this)">
+                            </figure>
+                            <p>
+                                abonnementen kunnen natuurlijk ook aangepast worden.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <hr class="mb-5">
+
+            <div class="row g-4 mb-4">
+                <div class="col-12 col-lg-4">
+                    <div class="card h-40">
+                        <div class="card-body text-center text-lg-start">
+                            <figure class="text-center">
+                                <img src="assets/images/projects/subscription_tracker/register.png" alt="Register pagina" class="img-fluid rounded" onclick="openFullscreen(this)">
+                            </figure>
+                            <p>
+                                Om een account aan te maken moet een email en wachtwoord ingegeven worden. Het wachtwoord kan getoond worden door op het oogje te klikken.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-lg-4">
+                    <div class="card h-40">
+                        <div class="card-body text-center text-lg-start">
+                            <figure class="text-center">
+                                <img src="assets/images/projects/subscription_tracker/login.png" alt="Login pagina" class="img-fluid rounded" onclick="openFullscreen(this)">
+                            </figure>
+                            <p>
+                                De login pagina.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-lg-4">
+                    <div class="card h-40">
+                        <div class="card-body text-center text-lg-start">
+                            <figure class="text-center">
+                                <img src="assets/images/projects/subscription_tracker/login_failure.png" alt="Slechte inputdata bij login" class="img-fluid rounded" onclick="openFullscreen(this)">
+                            </figure>
+                            <p>
+                                Slechte inputdata bij het inloggen.
+                            </p>
+                        </div>
+                    </div>
+                </div>
             </div>
 
             <div class="row g-4 mb-4">
                 <div class="col-12">
                     <div class="card h-40">
                         <div class="card-body text-center text-lg-start">
-                            <figure>
-                                <img src="assets/images/projects/php/homepage.png" alt="De homepagina van de applicatie" class="img-fluid rounded" onclick="openFullscreen(this)">
+                            <figure class="text-center">
+                                <img src="assets/images/projects/subscription_tracker/firebase_users.png" alt="Firebase authentication console" class="img-fluid rounded" onclick="openFullscreen(this)">
                             </figure>
                             <p>
-                                De homepagina van de applicatie.
+                                Voor user authentication wordt gebruik gemaakt van Firebase. Als een nieuwe user wordt aangemaakt komt die hierbij te staan. Als een gebruiker
+                                probeert in te loggen met valide input data zal de app firebase contacteren en als de user bestaat zal de app de user inloggen.
+                            </p>
+                            <p>
+                                In de app gebruik ik 2 databases. Eén lokale en één op Firebase. De gebruiker zal altijd op de lokale database werken en die van Firebase wordt 
+                                enkel gebruikt om de data te synchroniseren. Hierdoor kan de app ook offline gebruikt worden. Ik zou ook graag de mogelijkheid aanbieden om de 
+                                app te gebruiken zonder account. Dit zal wat complexer zijn om te implementeren maar dat is een goede oefening.
                             </p>
                         </div>
                     </div>
                 </div>
             </div>
 
-            <hr class="mb-5">
-
-            <div class="row g-4 mb-4">
+            <div class="row g-4 mb-4 justify-content-center">
                 <div class="col-12 col-lg-6">
-                    <div class="card h-60">
-                        <div class="card-body">
-                            <figure> 
-                                <img src="assets/images/projects/php/payment_overview.png" alt="Betaaloverzicht" class="img-fluid rounded" onclick="openFullscreen(this)"> 
-                            </figure>
-                            <p>
-                                Hierboven staat het betaaloverzicht. Dit is een voorbeeld van de webshop waar u kan zien welke producten u hebt gekocht 
-                                en de hoeveelheid ervan.
-                            </p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-12 col-lg-6">
-                    <div class="card h-60">
-                        <div class="card-body">
-                            <figure> 
-                                <img src="assets/images/projects/php/wire_mail.png" alt="Mail voor overschrijvingsbetaling inschrijng lid" class="img-fluid rounded" onclick="openFullscreen(this)">
-                            </figure>
-                            <p>
-                                Dit is een voorbeeld van een mail die verstuurd kan worden naar een ouder die zonet een lid heeft ingeschreven.
-                            </p>
-                        </div>
-                    </div>
-                </div>
-            </div>
+                    <div class="card h-40">
+                        <div class="card-body text-center text-lg-start">
+                            <div class="row g-4">
+                                <div class="col-12 col-lg-4 text-center">
+                                    <figure class="text-center">
+                                        <img src="assets/images/projects/subscription_tracker/homescreen.png" alt="Firebase authentication console" class="img-fluid rounded" onclick="openFullscreen(this)">
+                                    </figure>
+                                </div>
 
-            <hr class="mb-5">
-
-            <div class="row g-4 mb-4">
-                <div class="col-12 col-lg-6">
-                    <div class="card h-60">
-                        <div class="card-body">
-                            <figure> 
-                                <img src="assets/images/projects/php/pay_salaries.png" alt="Betaaloverzicht" class="img-fluid rounded" onclick="openFullscreen(this)">
-                            </figure>
-                            <p>
-                                Om de trainers te betalen was er ook een functionaliteit nodig. Dit scherm bevat de naam van de trainer en de trainer hun IBAN nummer, omdat de
-                                betaling buiten het systeem gebeurd. Dit scherm is enkel om de betaalde trainers te markeren als betaald. In het midden staat dan hoeveel de 
-                                trainer betaald moet worden voor die maand. Rechts staat nog een knop om de trainer te markeren als betaald.
-                            </p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-12 col-lg-6">
-                    <div class="card h-60">
-                        <div class="card-body">
-                            <figure> 
-                                <img src="assets/images/projects/php/pay_salaries_paid.png" alt="Mail voor overschrijvingsbetaling inschrijng lid" class="img-fluid rounded" onclick="openFullscreen(this)">
-                            </figure>
-                            <p>
-                                Linksboven op het scherm staat een filter om de betaalde of onbetaalde trainers te tonen. Hier worden enkel de betaalde getoond.
-                            </p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            
-            <hr class="mb-5">
-
-            <div class="row g-4 mb-4">
-                <div class="col-12">
-                    <div class="card h-60">
-                        <div class="card-body">
-                            <figure> 
-                                <img src="assets/images/projects/php/crud.png" alt="Betaaloverzicht" class="img-fluid rounded" onclick="openFullscreen(this)">
-                            </figure>
-                            <p>
-                                Hierboven staat het scherm om de leden te beheren. Hun inschrijvingen kunnen bekeken worden door op de knop met de boek te klikken.
-                                De informatie van de leden kan aangepast worden door op het potloodje te klikken. De meeste andere schermen die ik gemaakt heb zijn CRUD schermen en
-                                zien er ongeveer hetzelfde uit.
-                            </p>
+                                <div class="col-12 col-lg-6">
+                                    <p>
+                                        Dit is de homepagina van de app momenteel. Het ziet er niet geweldig uit, maar de database absctractie is klaar en de app kan al data 
+                                        ophalen en weergeven. Dat is al een hele stap vooruit.
+                                    </p>
+                                    <p>
+                                        De knoppen rechtsonder zijn voor een niewe subscription toe te voegen (nog niet geïmplementeerd) en om uit te loggen.
+                                    </p>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -302,8 +368,8 @@
                         <!-- UI Kit Menu Section-->
                         <li class="menu-section mt-5">Projecten</li>
                         <ul class="submenu">
-                            <li><a class="submenu-link" href="./project_subscription-tracker.html">Subscription tracker</a></li>
-                            <li><a class="submenu-link text-white" href="./project_php.html">PHP Project</a></li>
+                            <li><a class="submenu-link text-white" href="./project_subscription-tracker.html">Subscription tracker</a></li>
+                            <li><a class="submenu-link" href="./project_php.html">PHP Project</a></li>
                             <li><a class="submenu-link" href="./project_requirement-analysis.html">Requirement Analysis</a></li>
                             <li><a class="submenu-link" href="./project_devops-contentful.html">ASP.NET Contenful</a></li>
                         </ul>
