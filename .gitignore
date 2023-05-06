@@ -1,3 +1,6 @@
+# vscode workspace settings
+.vscode
+
 # Dependency directories
 node_modules/
 
