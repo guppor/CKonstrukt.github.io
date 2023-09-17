@@ -2,6 +2,7 @@
 <html lang="nl">
 
 <!-- Head -->
+
 <head>
     <!-- Page Meta Tags-->
     <meta charset="utf-8">
@@ -33,18 +34,18 @@
     <!-- Fix for custom scrollbar if JS is disabled-->
     <noscript>
         <style>
-          /**
+            /**
           * Reinstate scrolling for non-JS clients
           */
-          .simplebar-content-wrapper {
-            overflow: auto;
-          }
+            .simplebar-content-wrapper {
+                overflow: auto;
+            }
         </style>
     </noscript>
 
     <script>
         function openFullscreen(elem) {
-            if(!/Mobi|Android/i.test(navigator.userAgent)) {
+            if (!/Mobi|Android/i.test(navigator.userAgent)) {
                 if (elem.requestFullscreen) {
                     elem.requestFullscreen();
                 } else if (elem.webkitRequestFullscreen) {
@@ -56,23 +57,24 @@
     </script>
 
     <!-- Page Title -->
-    <title>PHP Project</title>
-    
+    <title>Subscription tracker</title>
+
 </head>
+
 <body>
     <nav class="navbar navbar-expand-lg navbar-light border-0 py-0 fixed-top bg-dark-800">
-      <div class="container-fluid">
-        <div class="d-flex justify-content-between align-items-center flex-grow-1 navbar-actions">
-    
-          <!-- Menu Toggle-->
-          <div class="menu-toggle cursor-pointer me-4 text-primary-hover transition-color disable-child-pointer">
-            <i class="ri-menu-fold-line ri-lg fold align-middle" data-bs-toggle="tooltip" data-bs-placement="right"
-              title="Close menu"></i>
-            <i class="ri-menu-unfold-line ri-lg unfold align-middle" data-bs-toggle="tooltip" data-bs-placement="right"
-              title="Open Menu"></i>
-          </div>
-          <!-- / Menu Toggle-->
-      </div>
+        <div class="container-fluid">
+            <div class="d-flex justify-content-between align-items-center flex-grow-1 navbar-actions">
+
+                <!-- Menu Toggle-->
+                <div class="menu-toggle cursor-pointer me-4 text-primary-hover transition-color disable-child-pointer">
+                    <i class="ri-menu-fold-line ri-lg fold align-middle" data-bs-toggle="tooltip"
+                        data-bs-placement="right" title="Close menu"></i>
+                    <i class="ri-menu-unfold-line ri-lg unfold align-middle" data-bs-toggle="tooltip"
+                        data-bs-placement="right" title="Open Menu"></i>
+                </div>
+                <!-- / Menu Toggle-->
+            </div>
     </nav>
 
     <!-- Page Content -->
@@ -85,18 +87,21 @@
                 <div class="col-12 col-lg-6">
                     <div class="card h-40">
                         <div class="card-header border-0 pb-0">
-                            <h6 class="card-title text-white">Wat is het?</h6>                    
+                            <h6 class="card-title text-white">Wat is het?</h6>
                         </div>
                         <div class="card-body">
                             <p>
-                                De subscription tracker is een side-project dat ik aan het maken ben om mijn abonnementen bij te houden. Er zijn natuurlijk finance tracker apps,
-                                maar dit leek me een opportuniteit om Flutter te leren. Flutter is een cross-platform framework dat gebruik maakt van Dart. Het is een relatief nieuw
-                                en heeft een grote community. Het is ook heel performant, omdat het gebruik maakt van een eigen rendering engine. Ik heb voor Flutter gekozen boven 
-                                Kotlin omdat in Flutter apps maar 1 keer geschreven moeten worden, en ze dan op zowel Android als iOS werken wat veel beter is voor solo developers.
+                                De subscription tracker is een side-project dat ik aan het maken ben om mijn
+                                abonnementen bij te houden. Er zijn natuurlijk finance tracker apps,
+                                maar dit leek me een opportuniteit om Flutter te leren. Flutter is een cross-platform
+                                framework dat gebruik maakt van Dart. Het is een relatief nieuw
+                                en heeft een grote community. Het is ook heel performant, omdat het gebruik maakt van
+                                een eigen rendering engine. Ik heb voor Flutter gekozen boven
+                                Kotlin omdat in Flutter apps maar 1 keer geschreven moeten worden, en ze dan op zowel
+                                Android als iOS werken wat veel beter is voor solo developers.
                             </p>
                             <p>
-                                Voor ik ben begonnen aan programmeren heb ik een design gemaakt in Figma, wat ik ook heb moeten leren. Ik heb ook gebruik gemaakt van ChatGPT om 
-                                features van de app verder uit te werken, het blijkt daaruit dat ChatGPT een geweldige brainstorming tool is.
+                                Onderaan volgen enkele screenshots van de app. Deze zijn uiteraard nog een WIP.
                             </p>
                         </div>
                     </div>
@@ -105,7 +110,7 @@
                 <div class="col-12 col-lg-6">
                     <div class="card h-40">
                         <div class="card-header border-0 pb-0">
-                            <h6 class="card-title text-white">Wat heb ik ervan geleerd?</h6>                    
+                            <h6 class="card-title text-white">Wat heb ik ervan geleerd?</h6>
                         </div>
                         <div class="card-body">
                             <p>
@@ -113,14 +118,19 @@
                             </p>
                             <ul>
                                 <li>
-                                    Dart, de taal waarmee flutter werkt. Toen ik er eerst mee begon was het heel familiair en leek het niet te complex, maar naarmate ik er meer 
-                                    mee werkte gebruikte ik advanced features zoals streams, factories, async en await, en meer. Wij zien deze maar redelijk beperkt in de lessen,
+                                    Dart, de taal waarmee flutter werkt. Toen ik er eerst mee begon was het heel
+                                    familiair en leek het niet te complex, maar naarmate ik er meer
+                                    mee werkte gebruikte ik advanced features zoals streams, factories, async en await,
+                                    en meer. Wij zien deze maar redelijk beperkt in de lessen,
                                     maar ze zijn wel goede kennis voor later.
                                 </li>
                                 <li>
-                                    Business logic separation. Flutter is opgedeeld in 2 delen, de UI en de business logic. Bij vanilla Flutter wordt business logic in de UI 
-                                    geschreven, maar dit is niet echt best practice. Bloc is een package die je toelaat om de business logic in een aparte laag te schrijven. 
-                                    Het concept van Bloc is simpel maar, zeker voor een beginner, kan het wel even nadenken zijn.
+                                    Business logic separation. Flutter is opgedeeld in 2 delen, de UI en de business
+                                    logic. Bij vanilla Flutter wordt business logic in de UI
+                                    geschreven, maar dit is niet echt best practice. Bloc is een package die je toelaat
+                                    om de business logic in een aparte laag te schrijven.
+                                    Het concept van Bloc is simpel maar, zeker voor een beginner, kan het wel even
+                                    nadenken zijn.
                                 </li>
                             </ul>
                         </div>
@@ -130,159 +140,106 @@
 
             <hr class="mb-5">
 
-            <div class="d-none d-md-block m-auto">                
-                <p class="small d-flex align-items-center"><i class="ri-information-line me-2"></i> klik op foto om ze te vergroten</span>               
+            <div class="d-none d-md-block m-auto">
+                <p class="small d-flex align-items-center"><i class="ri-information-line me-2"></i> klik op foto om ze
+                    te vergroten</span>
             </div>
 
             <div class="row g-4 mb-4">
-                <div class="col-12 col-lg-4">
-                    <div class="card h-40">
-                        <div class="card-body text-center text-lg-start">
-                            <figure class="text-center">
-                                <img src="assets/images/projects/subscription tracker/design_homescreen_2.png" alt="Design voor de homepagina" class="img-fluid rounded" onclick="openFullscreen(this)">
-                            </figure>
-                            <p>
-                                Dit was het eerste design voor de homepagina van de app. Het is opgedeeld in 3 delen: het totaal van de abonnementen, de abonnementen die morgen 
-                                betaald worden, en dan de abonnementen zelf die gesorteerd en gefilterd kunnen worden. 
-                            </p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-12 col-lg-4">
-                    <div class="card h-40">
-                        <div class="card-body text-center text-lg-start">
-                            <figure class="text-center">
-                                <img src="assets/images/projects/subscription tracker/design_homescreen_1.png" alt="Alt Design voor de homepagina" class="img-fluid rounded" onclick="openFullscreen(this)">
-                            </figure>
-                            <p>
-                                Dit was het tweede design voor de homepagina van de app. Het is grotendeels hetzelfde maar de abbonementen zitten nu in tiles met een logo in 
-                                plaats van in een list.
-                            </p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-12 col-lg-4">
-                    <div class="card h-40">
-                        <div class="card-body text-center text-lg-start">
-                            <figure class="text-center">
-                                <img src="assets/images/projects/subscription tracker/design_calendar.png" alt="Design voor kalender" class="img-fluid rounded" onclick="openFullscreen(this)">
-                            </figure>
-                            <p>
-                                De kalender toont op welke dag je abonnementen betaald worden.
-                            </p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <div class="row g-4 mb-4 justify-content-center">
-                <div class="col-12 col-lg-4">
-                    <div class="card h-40">
-                        <div class="card-body text-center text-lg-start">
-                            <figure class="text-center">
-                                <img src="assets/images/projects/subscription tracker/design_add.png" alt="Design voor nieuwe subscription toe te voegen" class="img-fluid rounded" onclick="openFullscreen(this)">
-                            </figure>
-                            <p>
-                                Om een abonnement toe te voegen moet de naam, prijs, betaaldatum en de periode ingegeven worden. De app berekent dan de volgende betaaldatum.
-                                Er kan ook nog gekozen worden om reminders voor een betaling aan te zetten en er is een mogelijkheid om extra info te geven.
-                            </p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-12 col-lg-4">
-                    <div class="card h-40">
-                        <div class="card-body text-center text-lg-start">
-                            <figure class="text-center">
-                                <img src="assets/images/projects/subscription tracker/design_edit.png" alt="Design voor subscription te editen" class="img-fluid rounded" onclick="openFullscreen(this)">
-                            </figure>
-                            <p>
-                                abonnementen kunnen natuurlijk ook aangepast worden.
-                            </p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <hr class="mb-5">
-
-            <div class="row g-4 mb-4">
-                <div class="col-12 col-lg-4">
-                    <div class="card h-40">
-                        <div class="card-body text-center text-lg-start">
-                            <figure class="text-center">
-                                <img src="assets/images/projects/subscription tracker/register.png" alt="Register pagina" class="img-fluid rounded" onclick="openFullscreen(this)">
-                            </figure>
-                            <p>
-                                Om een account aan te maken moet een email en wachtwoord ingegeven worden. Het wachtwoord kan getoond worden door op het oogje te klikken.
-                            </p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-12 col-lg-4">
-                    <div class="card h-40">
-                        <div class="card-body text-center text-lg-start">
-                            <figure class="text-center">
-                                <img src="assets/images/projects/subscription tracker/login.png" alt="Login pagina" class="img-fluid rounded" onclick="openFullscreen(this)">
-                            </figure>
-                            <p>
-                                De login pagina.
-                            </p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-12 col-lg-4">
-                    <div class="card h-40">
-                        <div class="card-body text-center text-lg-start">
-                            <figure class="text-center">
-                                <img src="assets/images/projects/subscription tracker/login_failure.png" alt="Slechte inputdata bij login" class="img-fluid rounded" onclick="openFullscreen(this)">
-                            </figure>
-                            <p>
-                                Slechte inputdata bij het inloggen.
-                            </p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <div class="row g-4 mb-4">
-                <div class="col-12">
-                    <div class="card h-40">
-                        <div class="card-body text-center text-lg-start">
-                            <figure class="text-center">
-                                <img src="assets/images/projects/subscription tracker/firebase_users.png" alt="Firebase authentication console" class="img-fluid rounded" onclick="openFullscreen(this)">
-                            </figure>
-                            <p>
-                                Voor user authentication wordt gebruik gemaakt van Firebase. Als een nieuwe user wordt aangemaakt komt die hierbij te staan. Als een gebruiker
-                                probeert in te loggen met valide input data zal de app firebase contacteren en als de user bestaat zal de app de user inloggen.
-                            </p>
-                            <p>
-                                In de app gebruik ik 2 databases. Eén lokale en één op Firebase. De gebruiker zal altijd op de lokale database werken en die van Firebase wordt 
-                                enkel gebruikt om de data te synchroniseren. Hierdoor kan de app ook offline gebruikt worden. Ik zou ook graag de mogelijkheid aanbieden om de 
-                                app te gebruiken zonder account. Dit zal wat complexer zijn om te implementeren maar dat is een goede oefening.
-                            </p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <div class="row g-4 mb-4 justify-content-center">
                 <div class="col-12 col-lg-6">
                     <div class="card h-40">
                         <div class="card-body text-center text-lg-start">
                             <div class="row g-4">
                                 <div class="col-12 col-lg-4 text-center">
                                     <figure class="text-center">
-                                        <img src="assets/images/projects/subscription tracker/homescreen.png" alt="Firebase authentication console" class="img-fluid rounded" onclick="openFullscreen(this)">
+                                        <img src="assets/images/projects/subscription tracker/register.png"
+                                            alt="Register pagina" class="img-fluid rounded"
+                                            onclick="openFullscreen(this)">
                                     </figure>
                                 </div>
 
                                 <div class="col-12 col-lg-6">
+                                    <h3>Register pagina</h3>
                                     <p>
-                                        Dit is de homepagina van de app momenteel. Het ziet er niet geweldig uit, maar de database absctractie is klaar en de app kan al data 
-                                        ophalen en weergeven. Dat is al een hele stap vooruit.
+                                        Dit is het scherm dat de gebruiker zal krijgen na wat initiële info over de app.
+                                        Hier
+                                        kan
+                                        geregistreerd worden, maar de gebruiker kan ook kiezen om in te loggen of om
+                                        door te
+                                        gaan
+                                        zonder authenticatie. Als hiervoor gekozen wordt zullen de subscriptions niet
+                                        opgeslagen
+                                        worden in
+                                        de cloud
+                                        (firestore), maar enkel lokaal.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-lg-6">
+                    <div class="card h-40">
+                        <div class="card-body text-center text-lg-start">
+                            <div class="row g-4">
+                                <div class="col-12 col-lg-4 text-center">
+                                    <figure class="text-center">
+                                        <img src="assets/images/projects/subscription tracker/homescreen.png"
+                                            alt="Firebase authentication console" class="img-fluid rounded"
+                                            onclick="openFullscreen(this)">
+                                    </figure>
+                                </div>
+
+                                <div class="col-12 col-lg-6">
+                                    <h3>Homepagina</h3>
+                                    <p>
+                                        Deze bestaat uit verschillende onderdelen:
+                                    </p>
+                                    <ul>
+                                        <li>Een filter functie waar er kan gezocht worden naar een subscriptie die de
+                                            search bevat in zijn naam.</li>
+                                        <li>Een sorteer knop waarmee de subscripties op basis van naam of prijs
+                                            gesorteerd kunnen worden.</li>
+                                        <li>De subscripties in een grid. Er kan op één gedrukt worden om een
+                                            bottomsheetmodal te krijgen
+                                            waarmee de subscriptie kan aangepast of verwijderd worden.
+                                        </li>
+                                        <li>Onderaan is er de navigatie naar de (nog niet geïmplementeerde) settings en
+                                            een create scherm.</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row g-4 mb-4">
+                <div class="col-12 col-lg-6">
+                    <div class="card h-40">
+                        <div class="card-body text-center text-lg-start">
+                            <div class="row g-4">
+                                <div class="col-12 col-lg-4 text-center">
+                                    <figure class="text-center">
+                                        <img src="assets/images/projects/subscription tracker/add_subscription.png"
+                                            alt="Register pagina" class="img-fluid rounded"
+                                            onclick="openFullscreen(this)">
+                                    </figure>
+                                </div>
+
+                                <div class="col-12 col-lg-6">
+                                    <h3>Create scherm</h3>
+
+                                    <p>
+                                        Hier kan een nieuwe subscriptie aangemaakt worden. De gebruiker zal een naam,
+                                        prijs, startdatum en periode moeten ingeven. Een icon en free trial zijn niet
+                                        verplicht. Als een subscriptie wordt aangemaakt en deze een free trial heeft,
+                                        zal er ook een notificatie gescheduled worden die de gebruiker zal herinneren
+                                        alvorens de free trial afloopt.
                                     </p>
                                     <p>
-                                        De knoppen rechtsonder zijn voor een niewe subscription toe te voegen (nog niet geïmplementeerd) en om uit te loggen.
+                                        De update pagina is identiek aan deze, met enkel een naamverandering boven en
+                                        onderaan .
                                     </p>
                                 </div>
                             </div>
@@ -296,14 +253,14 @@
                 <p class="small text-muted m-0">All rights reserved | © 2023</p>
                 <p class="small text-muted m-0">Template created by PixelRocket</p>
             </footer>
-            
-            
+
+
             <!-- Sidebar Menu Overlay-->
             <div class="menu-overlay-bg"></div>
             <!-- / Sidebar Menu Overlay-->
-            
+
             <!-- Modal Imports-->
-            <!-- Place your modal imports here-->            
+            <!-- Place your modal imports here-->
 
         </section>
         <!-- / Content-->
@@ -313,79 +270,84 @@
 
     <!-- Page Aside-->
     <aside class="aside bg-dark-700">
-    
+
         <div class="simplebar-wrapper">
             <div data-pixr-simplebar>
                 <div class="pb-6 pb-sm-0 position-relative">
-    
+
                     <!-- Mobile close btn-->
-                    <div class="cursor-pointer close-menu me-4 text-primary-hover transition-color disable-child-pointer position-absolute end-0 top-0 mt-3 pt-1 d-xl-none">
+                    <div
+                        class="cursor-pointer close-menu me-4 text-primary-hover transition-color disable-child-pointer position-absolute end-0 top-0 mt-3 pt-1 d-xl-none">
                         <i class="ri-close-circle-line ri-lg align-middle me-n2"></i>
                     </div>
                     <!-- / Mobile close btn-->
-    
+
                     <!-- Mobile Logo-->
                     <div class="d-flex justify-content-center align-items-center py-3">
                         <a class="m-0" href="./index.html">
                             <div class="d-flex align-items-center justify-content-center">
                                 <span class="fw-bold fs-3 text-white">Portofolio</span>
-                            </div> 
+                            </div>
                         </a>
                     </div>
                     <!-- / Mobile Logo-->
-    
+
                     <!-- User Details-->
                     <div class="border-bottom pt-3 pb-5 mb-6 d-flex flex-column align-items-center">
                         <div class="position-relative">
                             <picture class="avatar avatar-profile">
                                 <img class="avatar-profile-img" src="./assets/images/profile-small.jpg"
-                                  alt="Profiel foto">
+                                    alt="Profiel foto">
                             </picture>
                         </div>
                         <p class="mb-0 mt-3 text-white">Seppe Meeus</p>
                         <small>pagbounce.prof@proton.me</small>
                         <div class="d-flex flex-wrap mt-2 justify-content-between align-items-center">
-                            <div class="py-2 f-h-9 px-3 d-flex justify-content-center align-items-center bg-dark-opacity rounded p-2 small fw-bolder me-1">
+                            <div
+                                class="py-2 f-h-9 px-3 d-flex justify-content-center align-items-center bg-dark-opacity rounded p-2 small fw-bolder me-1">
                                 <i class="ri-map-pin-line me-2"></i>
                                 Retie, België
                             </div>
                         </div>
                     </div>
                     <!-- User Details-->
-    
+
                     <ul class="list-unstyled mb-6 aside-menu">
-    
+
                         <!-- Dashboard Menu Section-->
                         <li class="menu-section">Over mij</li>
                         <li class="menu-item"><a class="d-flex align-items-center menu-link" href="./index.html">
-                            <span>Homepagina</span></a>
+                                <span>Homepagina</span></a>
                         </li>
                         <li class="menu-item"><a class="d-flex align-items-center menu-link" href="./overmij.html">
-                            <span>Over mij</span></a>
+                                <span>Over mij</span></a>
                         </li>
                         <!-- / Dashboard Menu Section-->
-    
+
                         <!-- UI Kit Menu Section-->
                         <li class="menu-section mt-5">Projecten</li>
                         <ul class="submenu">
-                            <li><a class="submenu-link text-white" href="./project_subscription-tracker.html">Subscription tracker</a></li>
+                            <li><a class="submenu-link text-white"
+                                    href="./project_subscription-tracker.html">Subscription tracker</a></li>
                             <li><a class="submenu-link" href="./project_php.html">PHP Project</a></li>
-                            <li><a class="submenu-link" href="./project_requirement-analysis.html">Requirement Analysis</a></li>
-                            <li><a class="submenu-link" href="./project_devops-contentful.html">ASP.NET Contenful</a></li>
+                            <li><a class="submenu-link" href="./project_requirement-analysis.html">Requirement
+                                    Analysis</a></li>
+                            <li><a class="submenu-link" href="./project_devops-contentful.html">ASP.NET Contenful</a>
+                            </li>
                         </ul>
                         <!-- / Pages Menu Section-->
-    
+
                     </ul>
                 </div>
             </div>
         </div>
-    
-    </aside>    <!-- / Page Aside-->
+
+    </aside> <!-- / Page Aside-->
 
     <!-- Theme JS -->
     <!-- Vendor JS -->
     <script src="./assets/js/vendor.bundle.js"></script>
-    
+
     <!-- Theme JS -->
     <script src="./assets/js/theme.bundle.js"></script>
 </body>
